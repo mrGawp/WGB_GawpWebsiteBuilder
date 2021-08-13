@@ -51,7 +51,10 @@
 .t-roboto {font-family: 'Roboto Mono', monospace;}
 /*MonteCarlo*/
 .t-montecarlo {font-family: 'MonteCarlo', cursive;}
-
+/*WindSong*/
+.t-windsong {font-family: 'WindSong', cursive;}
+/*Abril FatFace*/
+.t-abrilfatface {font-family: 'Abril Fatface', cursive;}
 
 .a1 {font-family: 'Oswald', sans-serif; font-size: 25px;}
 .a2 {font-family: "Style Script", cursive; font-size: 25px;}
@@ -60,3 +63,5 @@
 .a5 {font-family: 'Arial', sans-serif; font-size: 25px;}
 .a6 {font-family: 'Roboto Mono', monospace; font-size: 25px;}
 .a7 {font-family: 'MonteCarlo', cursive; font-size: 25px;}
+.a8 {font-family: 'Abril Fatface', cursive;}
+.a9 {font-family: 'WindSong', cursive;}

@@ -33,7 +33,12 @@
   <div class="square" style="background-color:pink;"></div><a href="#"onclick="pink()">Pink</a><br>
   <div class="square" style="background-color:white;"></div><a href="#"onclick="white()">White</a><br>
   <div class="square" style="background-color:grey;"></div><a href="#"onclick="grey()">Grey</a><br>
-  <div class="square" style="background-color:black;"></div><a href="#"onclick="black()">Black</a><br>
+  <div class="square" style="background-color:black;"></div><a href="#"onclick="black()">Black</a><br><br><br>
+  <input type="range" id="rr" class="rr" value="127" min="0" Max="255"></input><br>
+  <input type="range" id="rg" class="rg" value="127" min="0" Max="255"></input><br>
+  <input type="range" id="rb" class="rb" value="127" min="0" Max="255"></input><br><br><br>
+  <a href="javascript:x()">Enter Color Code</a>
+  <a href="https://www.google.com/search?q=color+picker"><p class="sh">Where to find hex color code?<p></a>
 </div>
 <br>
 <!--TITLE SIDE NAV-->
@@ -55,7 +60,9 @@ Enter text here to change title
 <a href="#"onclick="tsmall()">Font Small</a><br>
 <a href="#"onclick="tmed()">Font Medium</a><br>
 <a href="#"onclick="tlarge()">Font Large</a><br>
-<a href="#"onclick="txlarge()">Font X-Large</a><br>
+<a href="#"onclick="txlarge()">Font X-Large</a><br><br>
+<input type="text" id="inputt" value="55" style="margin-left: 22px; width: 130px;"></input><br>
+<input type="submit" value="Change Font Size" style="margin-left: 22px; width: 138px" onclick="tl()"><br><br>
 </div>
 
 <!--TITLE FONTS SIDE NAV-->
@@ -68,6 +75,8 @@ Enter text here to change title
 <a class="a5" href="#"onclick="arial()">Arial</a><br>
 <a class="a6" href="#"onclick="roboto()">Roboto Mono</a><br>
 <a class="a7" href="#"onclick="montecarlo()">MonteCarlo</a><br>
+<a class="a8" href="#"onclick="abrilfatface()">Abril FatFace</a><br>
+<a class="a9" href="#"onclick="windsong()">Wind Song</a><br>
 </div>
 
 <!--SECTION COLOR SIDE NAV-->
@@ -82,7 +91,12 @@ Enter text here to change title
 <div class="square" style="background-color:pink;"></div><a href="#"onclick="spink()">Pink</a><br>
 <div class="square" style="background-color:white;"></div><a href="#"onclick="swhite()">White</a><br>
 <div class="square" style="background-color:grey;"></div><a href="#"onclick="sgrey()">Grey</a><br>
-<div class="square" style="background-color:black;"></div><a href="#"onclick="sblack()">Black</a><br>
+<div class="square" style="background-color:black;"></div><a href="#"onclick="sblack()">Black</a><br><br><br>
+<input type="range" id="srr" class="rr" value="127" min="0" Max="255"></input><br>
+<input type="range" id="srg" class="rg" value="127" min="0" Max="255"></input><br>
+<input type="range" id="srb" class="rb" value="127" min="0" Max="255"></input><br><br><br>
+<a href="javascript:sx()">Enter Color Code</a>
+<a href="https://www.google.com/search?q=color+picker"><p class="sh">Where to find hex color code?<p></a>
 </div>
 
 <!--SECTION TITLE SIDE NAV-->
@@ -101,7 +115,9 @@ Enter text here to change section title
 <a href="#"onclick="stsmall()">Font Small</a><br>
 <a href="#"onclick="stmed()">Font Medium</a><br>
 <a href="#"onclick="stlarge()">Font Large</a><br>
-<a href="#"onclick="stxlarge()">Font X-Large</a><br>
+<a href="#"onclick="stxlarge()">Font X-Large</a><br><br>
+<input type="text" id="inputs" value="30" style="margin-left: 22px; width: 130px;"></input><br>
+<input type="submit" value="Change Font Size" style="margin-left: 22px; width: 138px" onclick="sl()"><br><br>
 </div>
 
 <!--SECTION TITLE FONTS SIDE NAV-->
@@ -114,6 +130,8 @@ Enter text here to change section title
 <a class="a5" href="#"onclick="sarial()">Arial</a><br>
 <a class="a6" href="#"onclick="sroboto()">Roboto Mono</a><br>
 <a class="a7" href="#"onclick="smontecarlo()">MonteCarlo</a><br>
+<a class="a8" href="#"onclick="sabrilfatface()">Abril FatFace</a><br>
+<a class="a9" href="#"onclick="swindsong()">Wind Song</a><br>
 </div>
 
 <!--PARAGRAPH SIDE NAV-->
@@ -125,13 +143,15 @@ Enter text here to change section paragraph
 <br>
 <input type="submit" value="Change Text" style="margin:5px; width:94%;" onclick="pchange()">
 <br><br>
-<a href="#"onclick="ptoggle();pcloseNav()">Toggle Color</a>
+<a href="#"onclick="ptoggle();">Toggle Color</a>
 <br><br>
 <a href="#"onclick="pfopenNav()">Fonts</a>
 <br><br>
 <a href="#"onclick="psmall()">Font Small</a><br>
 <a href="#"onclick="pmed()">Font Medium</a><br>
-<a href="#"onclick="plarge()">Font Large</a><br>
+<a href="#"onclick="plarge()">Font Large</a><br><br>
+<input type="text" id="inputp" value="15" style="margin-left: 22px; width: 130px;"></input><br>
+<input type="submit" value="Change Font Size" style="margin-left: 22px; width: 138px" onclick="spl()"><br><br>
 </div>
 
 <!--SECTION PARAGRAPH FONTS SIDE NAV-->
@@ -144,6 +164,8 @@ Enter text here to change section paragraph
 <a class="a5" href="#"onclick="parial()">Arial</a><br>
 <a class="a6" href="#"onclick="proboto()">Roboto Mono</a><br>
 <a class="a7" href="#"onclick="pmontecarlo()">MonteCarlo</a><br>
+<a class="a8" href="#"onclick="pabrilfatface()">Abril FatFace</a><br>
+<a class="a9" href="#"onclick="pwindsong()">Wind Song</a><br>
 </div>
 
   <center>
@@ -378,6 +400,29 @@ function stlarge() {
 <script src="scripts.js"></script>
 
   <script>
+  //font size CHANGER TITLE
+  function tl() {
+    var tm = document.getElementById("inputt").value;
+    var tp = tm;
+    document.getElementById("title").style.fontSize = tp+"px";
+  }
+  function sl() {
+    var tm = document.getElementById("inputs").value;
+    var tp = tm;
+    document.getElementById("stitle").style.fontSize = tp+"px";
+  }
+  function spl() {
+    var tm = document.getElementById("inputp").value;
+    var tp = tm;
+    document.getElementById("p").style.fontSize = tp+"px";
+  }
+
+
+
+
+
+
+
 // color changer
 function red() {document.body.style.backgroundColor = "red";}
 function orange() {document.body.style.backgroundColor = "orange";}
@@ -401,5 +446,68 @@ function spink() {section.style.backgroundColor = "pink";}
 function swhite() {section.style.backgroundColor = "#e9e9f0";}
 function sgrey() {section.style.backgroundColor = "grey";}
 function sblack() {section.style.backgroundColor = "black";}
+
+
+
+//prompt hex color changer body
+function x() {
+  var v = prompt("Enter Hex Color Code");
+  var k = v;
+  document.body.style.backgroundColor = k;
+}
+//prompt hex color changer section
+function sx() {
+  var v = prompt("Enter Hex Color Code");
+  var k = v;
+  document.getElementById("section").style.backgroundColor = k;
+}
+//rgb slider body
+function cc() {
+  let red = document.getElementById('rr').value;
+  let green = document.getElementById('rg').value;
+  let blue = document.getElementById('rb').value;
+  let color = 'rgb(' + red + ',' + green + ',' + blue + ')';
+  document.body.style.backgroundColor = color;
+}
+document.getElementById('rr').addEventListener("input",cc);
+document.getElementById('rg').addEventListener("input",cc);
+document.getElementById('rb').addEventListener("input",cc);
+//rgb slider section
+function scc() {
+  let sred = document.getElementById('srr').value;
+  let sgreen = document.getElementById('srg').value;
+  let sblue = document.getElementById('srb').value;
+  let scolor = 'rgb(' + sred + ',' + sgreen + ',' + sblue + ')';
+  document.getElementById("section").style.backgroundColor = scolor;
+}
+document.getElementById('srr').addEventListener("input",scc);
+document.getElementById('srg').addEventListener("input",scc);
+document.getElementById('srb').addEventListener("input",scc);
+//javascript styling for slider Body Color
+document.getElementById("rr").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #ff003c 0%, #d9486a ' + value + '%, #fff ' + value + '%, white 100%)'
+};
+document.getElementById("rg").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #00ff1a 0%, #00ff1a ' + value + '%, #fff ' + value + '%, white 100%)'
+};
+document.getElementById("rb").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #0040ff 0%, #556fbd ' + value + '%, #fff ' + value + '%, white 100%)'
+};
+//javascript styling for slider SECTION COLOR
+document.getElementById("srr").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #ff003c 0%, #d9486a ' + value + '%, #fff ' + value + '%, white 100%)'
+};
+document.getElementById("srg").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #00ff1a 0%, #00ff1a ' + value + '%, #fff ' + value + '%, white 100%)'
+};
+document.getElementById("srb").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #0040ff 0%, #556fbd ' + value + '%, #fff ' + value + '%, white 100%)'
+};
 </script>
 </html>

@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 /*actual page */
 .title-p{
   width: 60%;
@@ -121,7 +123,7 @@ button:hover {
   padding-top: 60px;
 }
 .sidenav-bc a {
-  padding: 8px 8px 8px 22px;
+  padding: 8px 8px 8px 8px;
   font-family: 'Georama', sans-serif;
   text-decoration: none;
   font-size: 25px;
@@ -227,7 +229,7 @@ button:hover {
   padding-top: 60px;
 }
 .sidenav-s a {
-  padding: 8px 8px 8px 22px;
+  padding: 8px 8px 8px 8px;
   font-family: 'Georama', sans-serif;
   text-decoration: none;
   font-size: 25px;
@@ -376,4 +378,118 @@ button:hover {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+
+/*COLOR SLIDER*/
+.rr {
+  background: linear-gradient(to right, #ff003c 0%, #d9486a 50%, #fff 50%, #fff 100%);
+  border: solid 1px black;
+  border-radius: 8px;
+  height: 9px;
+  width: 120px;
+  outline: none;
+  opacity: 0.7;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: .2s;
+  -webkit-appearance: none;
+}
+.rr:hover {
+  opacity: 1;
+}
+.rr::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-image: linear-gradient(to right, #000000 , #4a4a4a);
+  cursor: pointer;
+}
+.rr::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-image: linear-gradient(to right, #000000 , #4a4a4a);
+  cursor: pointer;
+}
+.rg {
+  background: linear-gradient(to right, #00ff1a 0%, #00ff1a 50%, #fff 50%, #fff 100%);
+  border: solid 1px black;
+  border-radius: 8px;
+  height: 9px;
+  width: 120px;
+  outline: none;
+  opacity: 0.7;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: .2s;
+  -webkit-appearance: none;
+}
+.rg:hover {
+  opacity: 1;
+}
+.rg::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-image: linear-gradient(to right, #000000 , #4a4a4a);
+  cursor: pointer;
+}
+.rg::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-image: linear-gradient(to right, #000000 , #4a4a4a);
+  cursor: pointer;
+}
+.rb {
+  background: linear-gradient(to right, #0040ff 0%, #556fbd 50%, #fff 50%, #fff 100%);
+  border: solid 1px black;
+  border-radius: 8px;
+  height: 9px;
+  width: 120px;
+  outline: none;
+  opacity: 0.7;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: .2s;
+  -webkit-appearance: none;
+}
+.rb:hover {
+  opacity: 1;
+}
+.rb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-image: linear-gradient(to right, #000000 , #4a4a4a);
+  cursor: pointer;
+}
+.rb::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  background-image: linear-gradient(to right, #000000 , #4a4a4a);
+  cursor: pointer;
+}
+.sh {
+  font-family: 'Georama', sans-serif;
+  text-decoration: none;
+  margin-left: 2px;
+  font-size: 12px;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sh:hover {
+  color: #f1f1f1;
 }
