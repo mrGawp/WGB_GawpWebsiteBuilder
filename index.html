@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no"/>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="changer.css">
+<title>GWB_Alpha 0.9</title>
+<body>
+  <!-- EDITOR -->
+<div class="mc">
+<button onclick="BopenNav()"><h1>Background Color</h1></button>
+<button onclick="TopenNav()"><h1>Title</h1></button>
+<button onclick="stopenNav()"><h1>Section Title</h1></button>
+<button onclick="popenNav()"><h1>Paragraph</h1></button>
+</div>
+
+
+<!--BACKGROUND SIDE NAV-->
+<div id="nav-b" class="sidenav-b">
+<a href="javascript:void(0)" class="closebtn" onclick="BcloseNav()">&times;</a>
+<a href="javascript:BCopenNav()">Body Color</a>
+<a href="javascript:sopenNav()">Section Color</a>
+</div>
+<!--BACKGROUND COLOR SIDE NAV-->
+<div id="nav-bc" class="sidenav-bc">
+  <a href="javascript:void(0)" class="back" onclick="BCcloseNav()">&#8592;</a>
+  <div class="square" style="background-color:red;"></div><a href="#"onclick="red()">Red</a><br>
+  <div class="square" style="background-color:orange;"></div><a href="#"onclick="orange()">Orange</a><br>
+  <div class="square" style="background-color:yellow;"></div><a href="#"onclick="yellow()">Yellow</a><br>
+  <div class="square" style="background-color:green;"></div><a href="#"onclick="green()">Green</a><br>
+  <div class="square" style="background-color:blue;"></div><a href="#"onclick="blue()">Blue</a><br>
+  <div class="square" style="background-color:#9242bd;"></div><a href="#"onclick="purple()">Purple</a><br>
+  <div class="square" style="background-color:pink;"></div><a href="#"onclick="pink()">Pink</a><br>
+  <div class="square" style="background-color:white;"></div><a href="#"onclick="white()">White</a><br>
+  <div class="square" style="background-color:grey;"></div><a href="#"onclick="grey()">Grey</a><br>
+  <div class="square" style="background-color:black;"></div><a href="#"onclick="black()">Black</a><br>
+</div>
+<br>
+<!--TITLE SIDE NAV-->
+<div id="nav-T" class="sidenav-T">
+<a href="javascript:void(0)" class="closebtn" onclick="TcloseNav()">&times;</a>
+<textarea id="title-changer" rows="6" cols="30" style="margin:5px;">
+Enter text here to change title
+</textarea>
+<br>
+<input type="submit" value="Change Text" style="margin:5px; width:94%;" onclick="tchange()">
+<br><br>
+<a href="#"onclick="tcenter()">Toggle Center</a>
+<a href="#"onclick="ttoggle1()">Toggle Color</a>
+<a href="#"onclick="ttoggle2()">Toggle Underline</a>
+<br><br>
+<a href="#"onclick="TfopenNav()">Fonts</a>
+<br><br>
+<a href="#"onclick="txsmall()">Font X-Small</a><br>
+<a href="#"onclick="tsmall()">Font Small</a><br>
+<a href="#"onclick="tmed()">Font Medium</a><br>
+<a href="#"onclick="tlarge()">Font Large</a><br>
+<a href="#"onclick="txlarge()">Font X-Large</a><br>
+</div>
+
+<!--TITLE FONTS SIDE NAV-->
+<div id="nav-Tf" class="sidenav-Tf">
+<a href="javascript:void(0)" class="closebtn" onclick="TfcloseNav()">&#8592;</a>
+<a class="a1" href="#"onclick="oswald()">Oswald</a><br>
+<a class="a2" href="#"onclick="stylescript()">Style Script</a><br>
+<a class="a3" href="#"onclick="palettemosaic()">Palette Mosaic</a><br>
+<a class="a4" href="#"onclick="poppins()">Poppins</a><br>
+<a class="a5" href="#"onclick="arial()">Arial</a><br>
+<a class="a6" href="#"onclick="roboto()">Roboto Mono</a><br>
+<a class="a7" href="#"onclick="montecarlo()">MonteCarlo</a><br>
+</div>
+
+<!--SECTION COLOR SIDE NAV-->
+<div id="nav-s" class="sidenav-s">
+<a href="javascript:void(0)" class="closebtn" onclick="scloseNav()">&#8592;</a>
+<div class="square" style="background-color:red;"></div><a href="#"onclick="sred()">Red</a><br>
+<div class="square" style="background-color:orange;"></div><a href="#"onclick="sorange()">Orange</a><br>
+<div class="square" style="background-color:yellow;"></div><a href="#"onclick="syellow()">Yellow</a><br>
+<div class="square" style="background-color:green;"></div><a href="#"onclick="sgreen()">Green</a><br>
+<div class="square" style="background-color:blue;"></div><a href="#"onclick="sblue()">Blue</a><br>
+<div class="square" style="background-color:#9242bd;"></div><a href="#"onclick="spurple()">Purple</a><br>
+<div class="square" style="background-color:pink;"></div><a href="#"onclick="spink()">Pink</a><br>
+<div class="square" style="background-color:white;"></div><a href="#"onclick="swhite()">White</a><br>
+<div class="square" style="background-color:grey;"></div><a href="#"onclick="sgrey()">Grey</a><br>
+<div class="square" style="background-color:black;"></div><a href="#"onclick="sblack()">Black</a><br>
+</div>
+
+<!--SECTION TITLE SIDE NAV-->
+<div id="nav-st" class="sidenav-st">
+<a href="javascript:void(0)" class="closebtn" onclick="stcloseNav()">&times;</a>
+<textarea id="stitle-changer" rows="6" cols="30" style="margin:5px;">
+Enter text here to change section title
+</textarea>
+<br>
+<input type="submit" value="Change Text" style="margin:5px; width:94%;" onclick="stchange()">
+<br><br>
+<a href="#"onclick="sttoggle()">Toggle Color</a>
+<br><br>
+<a href="javascript:stcloseNav()"onclick="stfopenNav()">Fonts</a><br><br>
+<a href="#"onclick="stxsmall()">Font X-Small</a><br>
+<a href="#"onclick="stsmall()">Font Small</a><br>
+<a href="#"onclick="stmed()">Font Medium</a><br>
+<a href="#"onclick="stlarge()">Font Large</a><br>
+<a href="#"onclick="stxlarge()">Font X-Large</a><br>
+</div>
+
+<!--SECTION TITLE FONTS SIDE NAV-->
+<div id="nav-stf" class="sidenav-stf">
+<a href="javascript:stfcloseNav()" class="closebtn" onclick="stopenNav()">&#8592;</a>
+<a class="a1" href="#"onclick="soswald()">Oswald</a><br>
+<a class="a2" href="#"onclick="sstylescript()">Style Script</a><br>
+<a class="a3" href="#"onclick="spalettemosaic()">Palette Mosaic</a><br>
+<a class="a4" href="#"onclick="spoppins()">Poppins</a><br>
+<a class="a5" href="#"onclick="sarial()">Arial</a><br>
+<a class="a6" href="#"onclick="sroboto()">Roboto Mono</a><br>
+<a class="a7" href="#"onclick="smontecarlo()">MonteCarlo</a><br>
+</div>
+
+<!--PARAGRAPH SIDE NAV-->
+<div id="nav-p" class="sidenav-p">
+<a href="javascript:void(0)" class="closebtn" onclick="pcloseNav()">&times;</a>
+<textarea id="ptitle-changer" rows="11" cols="30" style="margin:5px;">
+Enter text here to change section paragraph
+</textarea>
+<br>
+<input type="submit" value="Change Text" style="margin:5px; width:94%;" onclick="pchange()">
+<br><br>
+<a href="#"onclick="ptoggle();pcloseNav()">Toggle Color</a>
+<br><br>
+<a href="#"onclick="pfopenNav()">Fonts</a>
+<br><br>
+<a href="#"onclick="psmall()">Font Small</a><br>
+<a href="#"onclick="pmed()">Font Medium</a><br>
+<a href="#"onclick="plarge()">Font Large</a><br>
+</div>
+
+<!--SECTION PARAGRAPH FONTS SIDE NAV-->
+<div id="nav-pf" class="sidenav-pf">
+<a href="javascript:void(0)" class="closebtn" onclick="pfcloseNav()">&#8592;</a>
+<a class="a1" href="#"onclick="poswald()">Oswald</a><br>
+<a class="a2" href="#"onclick="pstylescript()">Style Script</a><br>
+<a class="a3" class="a3" href="#"onclick="ppalettemosaic()">Palette Mosaic</a><br>
+<a class="a4" href="#"onclick="ppoppins()">Poppins</a><br>
+<a class="a5" href="#"onclick="parial()">Arial</a><br>
+<a class="a6" href="#"onclick="proboto()">Roboto Mono</a><br>
+<a class="a7" href="#"onclick="pmontecarlo()">MonteCarlo</a><br>
+</div>
+
+  <center>
+    <div class="title-p" id="title-p">
+  <h1 class="title" id="title">Title Name Here</h1>
+</div>
+<div class="section" id="section">
+<h2 id="stitle" class="h2">Section Title</h2>
+<p class="p" id="p">Quid hercle loquier iam modo super me ausus es,cinaede inepte? Nunc enim scito, puer,
+ut lauream ipse classiariam mihifortissimus ego quod fui cepi, atque uticreberrimos feci impetus in Galliautique saevos iam cecidi barbaros
+plures trecentis. Proelium gorillicum1scio facere, nec miles est ferociorvel aptior quam me omnium cohortium.Tu nil es, nisei palus alter, quem cito
+tanta perdam vi quanta nusquam gentiunotast adhuc; hoc verbum memoria tene.Quid nunc? An posse dicere inpune putasut dicis? Erras, pathice: dum loquar, rogomeos furtivos indices in omnibusterris ubi sis atque iam paro tibi
+inferre bellum. Tu quoque, O nequissime,asperrimam nunc tempestatem praepara,quae reculam istam quam vocas vitam tuam
+prorsus delebit. Mortuom iam te puta;ubivis quovisque tempore ut tu sis, eroet ego, sescentis qui modis te caederem,etiamsi nullis praeter manibus uterer.Non modo peritus sum pugnae nuda manused etiam Romanum ditiis exercituom
+fructus deripiam te miserum voltu nigratelluris caenum. Si modo nosses quid tibiperferrent istae parvolae facetiae,fortasse lingua favisses. Nunc, ah malum,nec nosti neque tu tacuisti, ut poenas dareiam debeas, O stulte. Nam iram desuperfundam in te veluti merdam, donicum usque eo
+mergare. Iam nunc mortuos, puerule, eris.
+</p>
+</div>
+</center>
+<br><br><br><br><br><br>
+</body>
+<script>
+//background nav
+function BopenNav() {
+  document.getElementById("nav-b").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function BcloseNav() {
+  document.getElementById("nav-b").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+//background color nav
+function BCopenNav() {
+  document.getElementById("nav-bc").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function BCcloseNav() {
+  document.getElementById("nav-bc").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+//title Nav
+function TopenNav() {
+  document.getElementById("nav-T").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function TcloseNav() {
+  document.getElementById("nav-T").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+//title fonts nav
+function TfopenNav() {
+  document.getElementById("nav-Tf").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function TfcloseNav() {
+  document.getElementById("nav-Tf").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+//section color nav
+function sopenNav() {
+  document.getElementById("nav-s").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function scloseNav() {
+  document.getElementById("nav-s").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+//section title nav
+function stopenNav() {
+  document.getElementById("nav-st").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function stcloseNav() {
+  document.getElementById("nav-st").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+//section title font changer
+function stfopenNav() {
+  document.getElementById("nav-stf").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function stfcloseNav() {
+  document.getElementById("nav-stf").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+//section paragraph nav
+function popenNav() {
+  document.getElementById("nav-p").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function pcloseNav() {
+  document.getElementById("nav-p").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+//section paragraph fonts nav
+function pfopenNav() {
+  document.getElementById("nav-pf").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function pfcloseNav() {
+  document.getElementById("nav-pf").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+
+//title text center-er
+function tcenter() {
+  var tcen = document.getElementById("title-p");
+    tcen.classList.toggle("title-c");
+}
+//title text changer
+function tchange() {
+  var tc = document.getElementById("title-changer").value;
+  var tx = tc;
+  document.getElementById("title").innerHTML = tx;
+}
+//underline and color
+function ttoggle1() {
+  var twhite = document.getElementById("title");
+    twhite.classList.toggle("title-w");
+}
+function ttoggle2() {
+  var tborder = document.getElementById("title");
+    tborder.classList.toggle("title-b");
+}
+//title font size changer
+function txsmall() {
+    var xsmallt = document.getElementById("title");
+    xsmallt.classList.add("txsmall");
+    xsmallt.classList.remove("tlarge");
+    xsmallt.classList.remove("txlarge");
+    xsmallt.classList.remove("tmed");
+    xsmallt.classList.remove("tsmall");
+}
+function tsmall() {
+    var smallt = document.getElementById("title");
+    smallt.classList.add("tsmall");
+    smallt.classList.remove("txlarge");
+    smallt.classList.remove("tlarge");
+    smallt.classList.remove("tmed");
+}
+function tmed() {
+    var medt = document.getElementById("title");
+    medt.classList.add("tmed");
+    medt.classList.remove("tlarge");
+    medt.classList.remove("txlarge");
+}
+function tlarge() {
+    var larget = document.getElementById("title");
+    larget.classList.add("tlarge");
+    larget.classList.remove("txlarge");
+  }
+  function txlarge() {
+      var xlarget = document.getElementById("title");
+      xlarget.classList.add("txlarge");
+    }
+
+// section title text toggle
+function stchange() {
+  var stc = document.getElementById("stitle-changer").value;
+  var stx = stc;
+  document.getElementById("stitle").innerHTML = stx;
+}
+//section title and color
+function sttoggle() {
+  var stwhite = document.getElementById("stitle");
+    stwhite.classList.toggle("title-sw");
+}
+// section font size
+function stxsmall() {
+    var xsmallts = document.getElementById("stitle");
+    xsmallts.classList.add("stxsmall");
+    xsmallts.classList.remove("stlarge");
+    xsmallts.classList.remove("stxlarge");
+    xsmallts.classList.remove("stmed");
+    xsmallts.classList.remove("stsmall");
+}
+function stsmall() {
+    var smallts = document.getElementById("stitle");
+    smallts.classList.add("stsmall");
+    smallts.classList.remove("stxlarge");
+    smallts.classList.remove("stlarge");
+    smallts.classList.remove("stmed");
+}
+function stmed() {
+    var medts = document.getElementById("stitle");
+    medts.classList.add("stmed");
+    medts.classList.remove("stlarge");
+    medts.classList.remove("stxlarge");
+}
+function stlarge() {
+    var largets = document.getElementById("stitle");
+    largets.classList.add("stlarge");
+    largets.classList.remove("stxlarge");
+  }
+  function stxlarge() {
+      var xlargets = document.getElementById("stitle");
+      xlargets.classList.add("stxlarge");
+    }
+
+
+
+    // paragraph text toggle
+    function pchange() {
+      var ptc = document.getElementById("ptitle-changer").value;
+      var ptx = ptc;
+      document.getElementById("p").innerHTML = ptx;
+    }
+    //paragraph color
+    function ptoggle() {
+      var pwhite = document.getElementById("p");
+        pwhite.classList.toggle("title-pw");
+    }
+    // paragraph font size
+    function psmall() {
+        var smallp = document.getElementById("p");
+        smallp.classList.add("psmall");
+        smallp.classList.remove("plarge");
+        smallp.classList.remove("pmed");
+    }
+    function pmed() {
+        var medp = document.getElementById("p");
+        medp.classList.add("pmed");
+        medp.classList.remove("plarge");
+    }
+    function plarge() {
+        var largep = document.getElementById("p");
+        largep.classList.add("plarge");
+      }
+    //fonts
+    </script>
+<script src="scripts.js"></script>
+
+  <script>
+// color changer
+function red() {document.body.style.backgroundColor = "red";}
+function orange() {document.body.style.backgroundColor = "orange";}
+function yellow() {document.body.style.backgroundColor = "yellow";}
+function green() {document.body.style.backgroundColor = "green";}
+function blue() {document.body.style.backgroundColor = "blue";}
+function purple() {document.body.style.backgroundColor = "#9242bd";}
+function pink() {document.body.style.backgroundColor = "pink";}
+function white() {document.body.style.backgroundColor = "#e9e9f0";}
+function grey() {document.body.style.backgroundColor = "grey";}
+function black() {document.body.style.backgroundColor = "black";}
+
+// section color changer
+function sred() {section.style.backgroundColor = "red";}
+function sorange() {section.style.backgroundColor = "orange";}
+function syellow() {section.style.backgroundColor = "yellow";}
+function sgreen() {section.style.backgroundColor = "green";}
+function sblue() {section.style.backgroundColor = "blue";}
+function spurple() {section.style.backgroundColor = "#9242bd";}
+function spink() {section.style.backgroundColor = "pink";}
+function swhite() {section.style.backgroundColor = "#e9e9f0";}
+function sgrey() {section.style.backgroundColor = "grey";}
+function sblack() {section.style.backgroundColor = "black";}
+</script>
+</html>

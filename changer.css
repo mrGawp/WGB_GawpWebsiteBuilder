@@ -1,0 +1,62 @@
+.title-w {
+  color: white;
+  border-bottom: 2px solid white;
+  flex-direction: row;
+  margin-left: 0
+}
+.title-sw {
+  color: white;
+  margin-left: 5px;
+  flex-direction: row;
+}
+.title-pw {
+  color: white;
+  flex-direction: row;
+  margin-left: 5px;
+}
+.title-c {
+  justify-content: center;
+}
+/*title font size*/
+.title-b {border-bottom: 0px solid transparent;}
+.txsmall {font-size: 15px;}
+.tsmall {font-size: 30px;}
+.tmed {font-size: 50px;}
+.tlarge {font-size: 70px;}
+.txlarge {font-size: 100px;}
+
+/*section title font size*/
+.stxsmall {font-size: 10px;}
+.stsmall {font-size: 20px;}
+.stmed {font-size: 30px;}
+.stlarge {font-size: 50px;}
+.stxlarge {font-size: 80px;}
+
+/*Paragraph font changer*/
+.psmall {font-size: 5px;}
+.pmed {font-size: 15px;}
+.plarge {font-size: 30px;}
+
+/*Oswald*/
+.t-oswald {font-family: 'Oswald', sans-serif;}
+/*Style Script*/
+.t-stylescript {font-family: "Style Script", cursive;}
+/*Pallete Mosaic*/
+.t-palettemosaic{font-family: "Palette Mosaic", cursive;}
+/*Poppins*/
+.t-poppins {font-family: 'Poppins', sans-serif;}
+/*Arial*/
+.t-arial {font-family: 'Arial', sans-serif;}
+/*Roboto Mono*/
+.t-roboto {font-family: 'Roboto Mono', monospace;}
+/*MonteCarlo*/
+.t-montecarlo {font-family: 'MonteCarlo', cursive;}
+
+
+.a1 {font-family: 'Oswald', sans-serif; font-size: 25px;}
+.a2 {font-family: "Style Script", cursive; font-size: 25px;}
+.a3{font-family: "Palette Mosaic", cursive; font-size: 25px;}
+.a4 {font-family: 'Poppins', sans-serif; font-size: 25px;}
+.a5 {font-family: 'Arial', sans-serif; font-size: 25px;}
+.a6 {font-family: 'Roboto Mono', monospace; font-size: 25px;}
+.a7 {font-family: 'MonteCarlo', cursive; font-size: 25px;}

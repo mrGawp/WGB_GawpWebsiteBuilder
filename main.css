@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+/*actual page */
+.title-p{
+  width: 60%;
+  display: flex;
+}
+.title {
+ font-family: 'Oswald', sans-serif;
+ font-size: 50px;
+ border-bottom: 2px solid black;
+ flex-direction: row;
+ margin-left: 0;
+}
+.section {
+  background-color: grey;
+  width: 60%;
+  height: auto;
+  flex-direction: column;
+  align-items: left;
+  display: flex;
+}
+.h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 5px;
+}
+.p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+.mc, html, body {
+    height: 100%;
+    margin: 0;
+}
+.mc {
+  margin:0;
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 9px;
+  background-color: #ced2e0;
+  opacity: 0.9;
+  border: 2px solid black;
+}
+body {
+  background-color: #e9e9f0;
+}
+button {
+  width: 150px;
+  height: 130px;
+  background-color: #4f4959;
+  margin: 35px;
+  transition: 0.5s;
+}
+button h1 {
+  font-family: 'Georama', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+button:hover {
+  background-color: #1d1c1f;
+  transform: scale(1.2);
+}
+/*background side nav*/
+.sidenav-b {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+.sidenav-b a {
+  padding: 8px 8px 8px 22px;
+  font-family: 'Georama', sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sidenav-b a:hover {
+  color: #f1f1f1;
+}
+.sidenav-b .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*background color side nav*/
+.sidenav-bc {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+.sidenav-bc a {
+  padding: 8px 8px 8px 22px;
+  font-family: 'Georama', sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sidenav-bc a:hover {
+  color: #f1f1f1;
+}
+.sidenav-bc .back {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+}
+.square {
+  margin-left: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+/*title side nav*/
+.sidenav-T {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+.sidenav-T a {
+  padding: 8px 8px 8px 22px;
+  font-family: 'Georama', sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sidenav-T a:hover {
+  color: #f1f1f1;
+}
+.sidenav-T .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*TITLE FONTS side nav*/
+.sidenav-Tf {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+.sidenav-Tf a {
+  padding: 8px 8px 8px 22px;
+  text-decoration: none;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sidenav-Tf a:hover {
+  color: #f1f1f1;
+}
+.sidenav-Tf .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*SECTION COLOR side nav*/
+.sidenav-s {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+.sidenav-s a {
+  padding: 8px 8px 8px 22px;
+  font-family: 'Georama', sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sidenav-s a:hover {
+  color: #f1f1f1;
+}
+.sidenav-s .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*section title side nav*/
+.sidenav-st {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+.sidenav-st a {
+  padding: 8px 8px 8px 22px;
+  font-family: 'Georama', sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sidenav-st a:hover {
+  color: #f1f1f1;
+}
+.sidenav-st .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*SECTION TITLE FONTS side nav*/
+.sidenav-stf {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+.sidenav-stf a {
+  padding: 8px 8px 8px 22px;
+  text-decoration: none;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sidenav-stf a:hover {
+  color: #f1f1f1;
+}
+.sidenav-stf .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav-stf .back {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  font-weight: bolder;
+  margin-left: 50px;
+}
+/*PARAGRAPH side nav*/
+.sidenav-p {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+.sidenav-p a {
+  padding: 8px 8px 8px 22px;
+  font-family: 'Georama', sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sidenav-p a:hover {
+  color: #f1f1f1;
+}
+.sidenav-p .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*PARAGRAPH FONTS side nav*/
+.sidenav-pf {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+.sidenav-pf a {
+  padding: 8px 8px 8px 22px;
+  text-decoration: none;
+  color: #818181;
+  display: inline-block;
+  transition: 0.1s;
+}
+.sidenav-pf a:hover {
+  color: #f1f1f1;
+}
+.sidenav-pf .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
