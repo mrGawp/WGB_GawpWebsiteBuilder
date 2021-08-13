@@ -17,6 +17,12 @@
 .title-c {
   justify-content: center;
 }
+.section-b {border: 2px solid black;}
+.section-bw {border: 2px solid white;}
+.stb {text-decoration: underline;}
+.stitle-c {
+  text-align: center;
+}
 /*title font size*/
 .title-b {border-bottom: 0px solid transparent;}
 .txsmall {font-size: 15px;}

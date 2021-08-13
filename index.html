@@ -108,7 +108,9 @@ Enter text here to change section title
 <br>
 <input type="submit" value="Change Text" style="margin:5px; width:94%;" onclick="stchange()">
 <br><br>
-<a href="#"onclick="sttoggle()">Toggle Color</a>
+<a href="#"onclick="stoggle2()">Toggle Center</a><br>
+<a href="#"onclick="sttoggle()">Toggle Color</a><br>
+<a href="#"onclick="stoggle1()">Toggle Underline</a>
 <br><br>
 <a href="javascript:stcloseNav()"onclick="stfopenNav()">Fonts</a><br><br>
 <a href="#"onclick="stxsmall()">Font X-Small</a><br>
@@ -143,8 +145,10 @@ Enter text here to change section paragraph
 <br>
 <input type="submit" value="Change Text" style="margin:5px; width:94%;" onclick="pchange()">
 <br><br>
-<a href="#"onclick="ptoggle();">Toggle Color</a>
-<br><br>
+<a href="#"onclick="ptoggle();">Toggle Color</a><br>
+<a href="#"onclick="pborder();"style="font-size: 22px;">Toggle Black Border</a><br>
+<a href="#"onclick="pwborder();" style="font-size: 22px;">Toggle White Border</a><br>
+<br>
 <a href="#"onclick="pfopenNav()">Fonts</a>
 <br><br>
 <a href="#"onclick="psmall()">Font Small</a><br>
@@ -268,6 +272,27 @@ function pfopenNav() {
 function pfcloseNav() {
   document.getElementById("nav-pf").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
+}
+
+//paragraph section toggle border
+function pborder() {
+  var pb = document.getElementById("section");
+    pb.classList.toggle("section-b");
+}
+//paragraph section toggle border color
+function pwborder() {
+  var pbw = document.getElementById("section");
+    pbw.classList.toggle("section-bw");
+}
+//section title toggle Underline
+function stoggle1() {
+  var sv = document.getElementById("stitle");
+    sv.classList.toggle("stb");
+}
+//section title center
+function stoggle2() {
+  var stc = document.getElementById("stitle");
+    stc.classList.toggle("stitle-c");
 }
 
 
